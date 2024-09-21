@@ -1,4 +1,4 @@
-import moves
+import Data.moves as moves
 
 class RoundRules :
     def __init__(self) -> None:

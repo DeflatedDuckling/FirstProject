@@ -1,7 +1,7 @@
 import math
-import data
+import Data.data as data
 import random
-import moves
+import Data.moves as moves
 
 class Round :
     def __init__(self) -> None:

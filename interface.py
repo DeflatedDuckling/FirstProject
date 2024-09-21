@@ -1,7 +1,7 @@
-import choiceCalc
-import data
-import roundAuto
-import roundRules
+import RoundSystem.choiceCalc as choiceCalc
+import Data.data as data
+import RoundSystem.roundAuto as roundAuto
+import RoundSystem.roundRules as roundRules
 
 
 RoundRules = roundRules.RoundRules
