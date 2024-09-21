@@ -3,12 +3,14 @@ import data
 import roundAuto
 import roundRules
 
+
 RoundRules = roundRules.RoundRules
 roundAuto = roundAuto
 Data = data.tableCl
 Round = choiceCalc.Round
 
-Round.GetChoiceInNum()
-Round.ChoiceAi()
+user = Round.GetChoiceInNum()
+ai = Round.ChoiceAi()
+RoundRules.CheckCasing(user,ai)
 
 

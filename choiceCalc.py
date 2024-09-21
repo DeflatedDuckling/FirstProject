@@ -1,7 +1,7 @@
 import math
 import data
 import random
-import roundRules
+import moves
 
 class Round :
     def __init__(self) -> None:
@@ -13,13 +13,13 @@ class Round :
         match choice: ## THIS LOOKS a little better -- Just a little better.
             case 1:
                 print("Rock")
-                return 1
+                return moves.rock
             case 2:
                print("Paper")
-               return 2
+               return moves.paper
             case 3:
                 print("Scissors")
-                return 3
+                return moves.scissors
             case _default :
               raise ValueError("You are worse than a stone tablet")
         
@@ -28,11 +28,14 @@ class Round :
         match aiAnswer:
             case 1:
                 print("AI chooses " + "Rock")
+                return moves.rock
             case 2:
                 print("AI chooses " + "Papers")
+                return moves.paper
             case 3:
                 print("AI chooses " + "Scissors")
+                return moves.scissors
                 
-        return aiAnswer
+        return 0
 
 
