@@ -9,8 +9,5 @@ roundAuto = roundAuto
 Data = data.tableCl
 Round = choiceCalc.Round
 
-user = Round.GetChoiceInNum()
-ai = Round.ChoiceAi()
-RoundRules.CheckCasing(user,ai)
-
-
+RoundS = roundAuto.RoundSystem
+auto = RoundS.CreateClass(3)
