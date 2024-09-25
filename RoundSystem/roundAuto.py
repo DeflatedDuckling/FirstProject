@@ -5,13 +5,13 @@ class RoundSystem :
     def __init__(self) -> None:
         pass
     
-    def CreateClass(max) :
+    def Create_Class(max) :
         i = 0
         while (i < max) :
             i = i + 1
             a = choiceCalc.Round
-            b = a.GetChoiceInNum()
-            c = a.ChoiceAi()
+            b = a.Get_Choice()
+            c = a.Choice_Ai()
             check = roundRules.RoundRules
             e = check.CheckCasing(b,c)
         return "True"

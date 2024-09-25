@@ -1,13 +1,11 @@
 import RoundSystem.choiceCalc as choiceCalc
-import Data.data as data
 import RoundSystem.roundAuto as roundAuto
 import RoundSystem.roundRules as roundRules
 
 
-RoundRules = roundRules.RoundRules
+roundRules = roundRules.RoundRules
 roundAuto = roundAuto
-Data = data.tableCl
-Round = choiceCalc.Round
+round = choiceCalc.Round
 
-RoundS = roundAuto.RoundSystem
-auto = RoundS.CreateClass(3)
+roundSystem = roundAuto.RoundSystem
+auto = roundSystem.Create_Class(10)

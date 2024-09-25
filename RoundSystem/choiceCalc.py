@@ -1,5 +1,4 @@
 import math
-import Data.data as data
 import random
 import Data.moves as moves
 
@@ -7,7 +6,7 @@ class Round :
     def __init__(self) -> None:
         pass
     
-    def GetChoiceInNum() :
+    def Get_Choice() :
         print(" 1 = Rock, 2 = Paper, 3 = Scissors")
         choice = int(input("Enter your choice: "))
         match choice: ## THIS LOOKS a little better -- Just a little better.
@@ -23,7 +22,7 @@ class Round :
             case _default :
               raise ValueError("You are worse than a stone tablet")
         
-    def ChoiceAi() :
+    def Choice_Ai() :
         aiAnswer = random.randint(1,3)
         match aiAnswer:
             case 1:
