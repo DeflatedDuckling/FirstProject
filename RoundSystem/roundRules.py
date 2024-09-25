@@ -4,7 +4,6 @@ class RoundRules :
     def __init__(self) -> None:
         pass
     def CheckCasing(user, ai) :
-       print("Ran")
        match user:
            case user if user == ai:
                print("Tie")
